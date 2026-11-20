@@ -1,0 +1,33 @@
+Coco Website Handoff - GitHub API 小分卷下载与还原说明
+
+请下载 delivery-parts-20MiB 目录中的全部 48 个分卷：
+
+Coco-Website-Handoff-2026-11-20.7z.001
+至
+Coco-Website-Handoff-2026-11-20.7z.048
+
+必须把 001 至 048 全部放在同一个文件夹内，不能遗漏，也不能修改文件名。
+
+还原方法：
+
+1. 安装 7-Zip。
+2. 右键点击 Coco-Website-Handoff-2026-11-20.7z.001。
+3. 选择“7-Zip” -> “提取到当前文件夹”。
+4. 7-Zip 会自动读取其余 47 个分卷，并生成 Coco-Website-Handoff-2026-11-20.zip。
+
+不要逐个解压 002 至 048，只需操作 001。
+
+还原后的原始 ZIP：
+
+文件大小：994,570,695 字节
+
+SHA256：
+B6653093EC4B2EDD52DA4A9BFF2762834AB04DCECCD63A9A67E925FB0665F679
+
+PowerShell 校验命令：
+
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Coco-Website-Handoff-2026-11-20.zip'
+
+如果还原失败，请使用 SHA256SUMS.txt 核对每个分卷，并确认 001 至 048 全部下载完成。
+
+注意：仓库中的 delivery-parts 目录是早期未完成的 90MiB 上传，不要使用。完整交付目录是 delivery-parts-20MiB。
